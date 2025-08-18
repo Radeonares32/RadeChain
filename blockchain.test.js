@@ -55,6 +55,7 @@ describe("Blockchain", () => {
           });
           describe("and the chain does not contain any invalid blocks", () => {
             it("returns true", () => {
+              console.log(blockchain.chain);
               expect(Blockchain.isValidChain(blockchain.chain)).toBe(true);
             });
           });
